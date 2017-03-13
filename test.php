@@ -33,7 +33,7 @@ if(isset($_GET['searchdata'])){
     echo "--------------------------------"."<br/>";
 
 // We need particular data from the page and not the whole content
-    $item_list =explode('<div class="items-wrap">', $web_page_data); //from entire webpage it will split based on word <div class="items-wrap">
+    $item_list =explode('<div class="items-wrap">', $web_page_data); //from entire web page it will split based on word <div class="items-wrap">
 
 //Item list is an array so print_r
 //print_r($item_list);
