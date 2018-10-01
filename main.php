@@ -13,7 +13,7 @@ $item_list =explode('<div class="items-wrap">', $web_page_data); //from entire w
 //print_r($item_list);
 
 //array 0 contains un necessary info so avoid it adn loop of 4
-for ($i=1;$i<5;$i++){
+for ($i=1;$i<=4;$i++){
 
     //echo $item_list[$i]; //this array is separated based on split string <div class="items-wrap">
     //i want title and another information
