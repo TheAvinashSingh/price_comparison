@@ -113,7 +113,7 @@ if(isset($_GET['searchdata'])){
             $price = $itemdata['Best_Price'];
             $product_link = $itemdata['Uri'];
 
-            echo $seller."<br/>".$price."<br/>".$product_link."<br/><br/>";
+            echo $seller."<br/>".$product_link."<br/>".$price."<br/><br/>";
         }
 
 
