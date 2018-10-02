@@ -63,7 +63,16 @@ for ($i=1;$i<5;$i++){
     // go to pricetree access api to get price list
     // price list will be accessible based on $item_id
     $request = "http://www.pricetree.com/dev/api.ashx?pricetreeId=".$item_id."&apikey=7770AD31-382F-4D32-8C36-3743C0271699";
-    $response = file_get_contents($request);
+     $response = file_get_contents($request);
+    try{
+      if(!response)
+          throw new Exception();
+    
+    }catch(Exception $e)
+    {
+        echo "Something went wrong";
+    }
+   
     $results = json_decode($response, TRUE);
 
     //print_r($results);
